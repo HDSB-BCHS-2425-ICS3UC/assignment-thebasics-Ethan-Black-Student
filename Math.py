@@ -1,79 +1,100 @@
+
 import math
-
-"""
-
-#Basic Math
-
-#Addition Practice
-sum_add = 2 + 14
-#Subtraction Practice
-diffrerence = 2 - 14
-#Multiplication Practice
-product = 3 * 7
-#Division Practice
-quotient = 24 / 6
-#Square Root Practice
-sqaure = math.sqrt(9)
-#Exponent Practice
-exponent = 3**2
-print (str(sum_add) + " " + str(diffrerence) + " " + str(product) + " " + str(quotient) + " " + str(sqaure) + " " + str(exponent))
-print (" ")
-
-#Tileable Discriminant
-
-#Difine "a" Value
-print ("Input a value")
-a = int(input())
-#Difine "b" Value
-print ("Input b value")
-b = int(input())
-#Difine "c" Value
-print ("Input c value")
-c = int(input())
-#Discriminent Equation
-An = b**2-4*a*c
-print (str("the Discriminant is ") + str(An))
-print (" ")
-
-"""
 
 #3D Volume Calculator
 
-print ("3D Volume Calculator")
-print ("What shape would you like to calculate the volume of?")
-print ("Prism, Sphere, Cone, or Cylinder?")
-shape = str(input())
-if (shape == "Prism"):
-    print ("Triangular, Rectangular, or Cuboid?")
-    prism = str(input())
-    if (prism == "Triangular"):
-        #Difine Base Value
-        print ("Input base value")
-        b = int(input())
+print ()
+
+while True:
+
+    print ("My 3D Volume Calculator")
+    print ()
+    print ("What shape would you like to calculate the volume of?")
+    print ("Prism, Sphere, Cone, or Cylinder?")
+    print ()
+    shape = str(input())
+    print ()
+    if (shape == "Prism"):
+        print ("Triangular, Rectangular, or Cuboid?")
+        print ()
+        prism = str(input())
+        print ()
+        if (prism == "Triangular"):
+            #Difine Base Value
+            print ()
+            b = float(input("Base value is "))
+            print ()
+            #Difine Height Value
+            print ()
+            h = float(input("Height value is "))
+            print ()
+            #Difine Length Value
+            print ()
+            l = float(input("Length value is "))
+            print ()
+            v = 0.5*b*h*l
+            print (str("The volume is "), float(v))
+        if (prism == "Rectangular"):
+            #Difine length Value
+            print ()
+            l = float(input("Length value is "))
+            print ()
+            #Difine Width Value
+            print ()
+            w = float(input("Width value is "))
+            print ()
+            #Difine Height Value
+            print ()
+            h = float(input("Height value is "))
+            print ()
+            v = l*w*h
+            print (str("The volume is "), float(v))
+        if (prism == "Cuboid"):
+            #Difine Side Length Value
+            print ()
+            sl = float(input("Length value is "))
+            print ()
+            v = sl**3
+            print (str("The volume is "), float(v))
+    if (shape == "Sphere"):
+        #Difine Radius Value
+        print ()
+        r = float(input("Radius value is "))
+        print ()
+        v = (4/3)*math.pi*r**3
+        print (str("The volume is "), float(v))
+    if (shape == "Cone"):
+        #Difine Radius Value
+        print ()
+        r = float(input("Radius value is "))
+        print ()
         #Difine Height Value
-        print ("Input height value")
-        h = int(input())
-        #Difine Length Value
-        print ("Input length value")
-        l = int(input())
-        v = 0.5*b*h*l
-        print (str("the volume is ") + str(v))
-    if (prism == "Rectangular"):
-        #Difine length Value
-        print ("Input length value")
-        l = int(input())
-        #Difine Width Value
-        print ("Input Width value")
-        w = int(input())
+        print ()
+        h = float(input("Height value is "))
+        print ()
+        v = (h/3)*math.pi*r**2
+        print (str("The volume is "), float(v))
+    if (shape == "Cylinder"):
+        #Difine Radius Value
+        print ()
+        r = float(input("Radius value is "))
+        print (" ")
         #Difine Height Value
-        print ("Input Height value")
-        h = int(input())
-        v = l*w*h
-        print (str("the volume is ") + str(v))
-    if (prism == "Cuboid"):
-        #Difine Side Length Value
-        print ("Input side length value")
-        sl = int(input())
-        v = sl**3
-        print (str("the volume is ") + str(v))
-if 
+        print ()
+        h = float(input("Height value is "))
+        print (" ")
+        v = h*math.pi*r**2
+        print (str("The volume is "), float(v))
+    
+    print ()
+    print ("Would you like to continue?")
+    print ("Yes or No")
+    print ()
+    Continue = str(input())
+    if (Continue == "No"): 
+        print ()
+        print (str("Thank you for using my volume calculator!"))
+        print ()
+        break
+    if (Continue == "Yes"):
+        print ()
