@@ -20,10 +20,6 @@ exponent = 3**2
 print (str(sum_add) + " " + str(diffrerence) + " " + str(product) + " " + str(quotient) + " " + str(sqaure) + " " + str(exponent))
 print (" ")
 
-"""
-
-"""
-
 #Tileable Discriminant
 
 #Difine "a" Value
