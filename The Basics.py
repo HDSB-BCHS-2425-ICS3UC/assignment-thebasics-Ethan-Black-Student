@@ -37,6 +37,19 @@ print (str("the Discriminant is ") + str(An))
 print (" ")
 
 """
+"""
+
+a = float(input("Input a value "))
+b = float(input("Input b value "))
+
+integery = int(a * b)
+floaty = float(a * b)
+booleany = bool(True)
+stringy = str("Your anwsers are:",)
+print(stringy)
+print(integery, "," , floaty, "," "True")
+
+"""
 
 #3D Volume Calculator
 
